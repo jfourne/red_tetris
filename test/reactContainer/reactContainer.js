@@ -1,0 +1,10 @@
+import './App';
+import './AllBoards';
+import './ButtonStart';
+import './CreateName';
+import './HomePageButton';
+import './LoadGamePage';
+import './LoadGames';
+import './Lobbies';
+import './LobbyCreateGame';
+import './WaitGameCreate'

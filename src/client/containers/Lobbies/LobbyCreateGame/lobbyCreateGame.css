@@ -1,0 +1,39 @@
+.loadRoomPlayers {
+	height: 250px;
+}
+
+#printCurrRoom {
+	height: 40px;
+	width: 500px;
+	font-size: 30px;
+
+}
+
+.labelDiv {
+	text-shadow: 1px 1px #eea5f6;
+	color: black;
+}
+
+.lobbyCreateGame {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 800px;
+	height: 800px;
+	font-family: Revalia;
+	background-color: rgb(36, 36, 36, 0.8);
+	text-shadow: #fad6d6 1px 0 20px;
+	color: #eea5f6;
+}
+
+.loadRoomPlayers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 850px;
+}
+
+.printWinner {
+	text-align: center;
+}

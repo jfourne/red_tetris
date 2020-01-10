@@ -1,0 +1,25 @@
+.createName {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 700px;
+	font-family: Revalia
+}
+
+#name {
+	height: 20px;
+	width: 250px;
+}
+
+.nameDiv {
+	height: 40px;
+}
+
+.nameDiv > #name{
+	width: 100%;
+	height: 100%;
+	font-family: Revalia;
+	font-size: 100%;
+	text-align: center;
+}

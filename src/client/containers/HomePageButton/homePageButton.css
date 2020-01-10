@@ -1,0 +1,12 @@
+.homePageButton {
+	width: 100px;
+	height: 30px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	font-family: Revalia
+}
+
+.homePageButtonDiv {
+	height: 30px;
+}

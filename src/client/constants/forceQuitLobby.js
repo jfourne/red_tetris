@@ -1,0 +1,1 @@
+export const FORCE_QUIT_LOBBY = 'FORCE_QUIT_LOBBY'

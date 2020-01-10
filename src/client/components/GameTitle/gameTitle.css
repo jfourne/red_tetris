@@ -1,0 +1,83 @@
+.gameTitle {
+	color: #0c093c;
+	text-align: center;
+	font-size: 100px;
+	width: 700px;
+	font-family: Revalia
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80em;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	justify-content: center;
+	padding: 1em;
+	width: 100%;
+}
+
+h1 {
+	animation: text-shadow 5s ease-in-out infinite;
+	font-size: 5em;
+	font-weight: 900;
+	line-height: 1;
+}
+
+@keyframes text-shadow {
+	0% {  
+			transform: translateY(0);
+			text-shadow: 
+					0 0 0 #fad6d6, 
+					0 0 0 #eea5f6, 
+					0 0 0 #df42d1, 
+					0 0 0 #0c093c;
+	}
+
+	20% {  
+			transform: translateY(-0.5em);
+			text-shadow: 
+					0 0.125em 0 #fad6d6, 
+					0 0.25em 0 #eea5f6, 
+					0 -0.125em 0 #df42d1, 
+					0 -0.25em 0 #0c093c;
+	}
+
+	40% {  
+			transform: translateY(0.25em);
+			text-shadow: 
+					0 -0.0625em 0 #fad6d6, 
+					0 -0.125em 0 #eea5f6, 
+					0 0.0625em 0 #df42d1, 
+					0 0.125em 0 #0c093c;
+	}
+	
+ 60% {
+			transform: translateY(-0.125em);
+			text-shadow: 
+					0 0.03125em 0 #fad6d6, 
+					0 0.0625em 0 #eea5f6, 
+					0 -0.03125em 0 #df42d1, 
+					0 -0.0625em 0 #0c093c;
+	}
+
+	80% {  
+			transform: translateY(0);
+			text-shadow: 
+					0 0 0 #fad6d6, 
+					0 0 0 #eea5f6, 
+					0 0 0 #df42d1, 
+					0 0 0 #0c093c;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}

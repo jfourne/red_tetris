@@ -1,0 +1,1 @@
+export const GET_LOBBIES = "GET_LOBBIES";

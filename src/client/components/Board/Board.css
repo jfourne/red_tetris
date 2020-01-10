@@ -1,0 +1,91 @@
+.flex-row-container {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	outline: black solid 5px;
+}
+
+.allBoard {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	height: 900px;
+	width: 1000px;
+}
+
+.otherBoard1{
+	order: 1
+}
+
+.mainBoard{
+	order: 3;
+}
+
+.otherBoard2{
+	order: 2
+}
+
+.otherBoard3{
+	order: 4
+}
+
+.otherBoard4{
+	order: 5
+}
+
+.mainBoardHeight {
+	height: 800px;
+	width: 400px;
+}
+
+.otherBoardHeight {
+	height: 400px;
+	width: 200px;
+}
+
+/* 
+.mainBoardHeight {
+	height: 800px;
+	width: 400px;
+}
+
+.otherBoardHeight {
+	height: 400px;
+	width: 200px;
+}
+
+.mainBoard {
+	position: absolute;
+	display: inline-block;
+	margin: 0 5%;
+}
+
+.otherBoard1 {
+	float: left;
+	position: absolute;
+	display: inline-block;
+	margin: 0 0;
+}
+
+.otherBoard2 {
+	float: left;
+	position: absolute;
+	display: inline-block;
+	margin: 450px -200px;
+}
+
+.otherBoard3 {
+	float: right;
+	position: absolute;
+	display: inline-block;
+	margin: 500px;
+}
+
+.otherBoard4 {
+	float: right;
+	position: absolute;
+	display: inline-block;
+	margin: 500px;
+} */

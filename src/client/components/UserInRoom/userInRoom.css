@@ -1,0 +1,14 @@
+#playerList {
+	height: 30px;
+	font-size: 20px;
+}
+
+.userInRoomTitle {
+	font-size: 35px;
+	text-shadow: 1px 1px #eea5f6;
+	color: black;
+}
+
+#changeOwnerButton {
+	margin: 5px;
+}

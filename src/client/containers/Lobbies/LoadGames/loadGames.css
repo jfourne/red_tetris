@@ -1,0 +1,27 @@
+.loadGames {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 850px;
+	font-family: Revalia;
+	padding: 40px;
+	background-color: rgb(36, 36, 36, 0.8);
+	text-shadow: #fad6d6 1px 0 20px;
+	color: #eea5f6;
+
+}
+
+.lobbyTitle {
+	text-align: center;
+	font-size: 40px;
+	width: 300px;
+	margin: 0px;
+	color: black;
+	text-shadow: 1px 1px #eea5f6;
+}
+
+.lobbiesPrint {
+	width: 600px;
+	height: 400px;
+}

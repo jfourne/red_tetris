@@ -1,0 +1,196 @@
+actiGameManager =>
+
+gere le tableau des games
+SUBSCRIBE a JOIN_ROOM et a EXIT_ROOM
+permet:
+ - creer nouvelles game
+ - liberer un lobby (des game)
+
+
+ Game =>
+
+ gere les parties
+ SUBSCRIBE a GAME_START
+ permet:
+ - de faire rejoindre des joueurs
+ - de faire rejoindre des spectateurs
+ - de lancer une parties
+ - de gerer le deroulement de la partie
+
+
+Player =>
+
+gere les joueurs
+SUBSCRIBE a MOVE_LEFT MOVE_RIGHT ROTATE_RIGHT SOFT_DROP HARD_DROP
+permet:
+- de faire les actions sur le board du jouer
+
+
+Board =>
+
+gere les boards
+permet:
+- de gerer les partie et definir si elle se finissent
+- generer les nouvelles pieces
+
+Pieces =>
+
+gere les pieces
+permet:
+- de gerer toute les actions realisable sur une piece
+
+
+
+CONNECTION => New player added to Main Lobby
+
+LobbyManager
+Lobby
+Player
+Game
+Board
+Piece
+
+ Commandes de joseph :
+
+ hard drop CHECKED
+ combo block other boards
+ Truc du name (bloc name ou id + name)
+ home dans lobby truc chelou
+ owner leave game crash
+ send board to spectators
+ (display next piece ?)
+
+
+init
+
+initPlayer =>
+'initPlayer',  {
+   type: 'server/initPlayer',
+   name: truc
+}
+
+
+main lobby
+
+createRoom =>
+'action_mainLobby', {
+  type: 'server/createRoom'
+}
+joinRoom =>
+'action_mainLobby', {
+  type: 'server/joinRoom'
+  roomId: truc
+  roomName: truc
+}
+getRooms =>
+'action_mainLobby', {
+  type: 'server/getRooms'
+}
+
+
+
+leave room
+
+'action_leaveRoom', {
+  type: 'server/leaveRoom'
+}
+
+
+lobby
+
+switchRole =>
+'action_lobby', {
+  type: 'server/switchRole'
+  name: truc
+  role: truc
+}
+setOwner =>
+'action_lobby', {
+  type: 'server/setOwner'
+  name: truc
+}
+getPlayers =>
+'action_lobby', {
+  type: 'server/getPlayers'
+}
+gameStart =>
+'action_lobby', {
+  type: 'server/gameStart'
+  id : truc
+}
+
+
+game
+
+leftArrow =>
+'action_game', {
+  type: 'server/leftArrow'
+}
+rightArrow =>
+'action_game', {
+  type: 'server/rightArrow'
+}
+upArrow =>
+'action_game', {
+  type: 'server/upArrow'
+}
+downArrow =>
+'action_game', {
+  type: 'server/downArrow'
+}
+space =>
+'action_game', {
+  type: 'server/space'
+}
+
+
+//JOSEPH CONSTS
+
+for 'initPlayer':
+'initPlayer',  {
+    type: initPlayer,
+    name
+}
+
+for 'board', 'gameStart', 'gameEnd':
+'game', {
+    type: board,
+    board,
+}, {
+    type: gameStart,
+}, {
+    type: gameEnd,
+    winner
+}
+
+for 'createRoom', 'getPlayers', 'setOwner', 
+    'setRoomOwner', 'switchRole', 'lobbyDeleted' :
+'lobby', {
+    type: createLobby,
+    room,
+}, {
+    type: getUsers,
+    users,
+}, {
+    type: setOwner,
+    isOwner,
+}, {
+    type: setLobbyOwner,
+    owner,
+}, {
+    type: switchRole,
+}, {
+    type: lobbyDeleted,
+}
+
+for 'getRooms' :
+'getLobbies', {
+    type: getLobbies,
+    lobbies,
+}
+
+for 'myError' :
+'error', {
+    type: error,
+    error
+}

@@ -1,0 +1,81 @@
+.flex-row-item {
+	flex-grow: 1;
+}
+
+.mainPieceHeight {
+	flex: 1 1 9%;
+	border: solid black 1px;
+	border-radius: 5px;
+	/* prev withtout border flex: 1 1 9% */
+}
+
+.otherPieceHeight {
+	flex: 1 1 9%;
+	border: solid black 1px;
+	border-radius: 5px;
+	/* prev withtout border flex: 1 1 9% */
+}
+
+#p_0 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#p_1 {
+	background: rgba(112, 33, 106, 0.8);
+}
+
+#p_2 {
+	background: rgba(238, 165, 246, 0.8);
+}
+
+#p_3 {
+	background: rgba(229, 148, 238, 0.8);
+}
+
+#p_4 {
+	background: rgba(225, 88, 240, 0.8);
+}
+
+#p_5 {
+	background: rgba(204, 36, 223, 0.8);
+}
+
+#p_6 {
+	background: rgba(238, 126, 250, 0.8);
+}
+
+#p_7 {
+	background: rgba(192, 54, 207, 0.8);
+}
+
+#p_8 {
+	background: rgba(239, 173, 247, 0.8);
+}
+
+#p_2p_5prev {
+	background: rgba(238, 165, 246, 0.4);
+}
+
+#p_3p_5prev {
+	background: rgba(229, 148, 238, 0.4);
+}
+
+#p_4p_5prev {
+	background: rgba(225, 88, 240, 0.4);
+}
+
+#p_5prev {
+	background: rgba(204, 36, 223, 0.4);
+}
+
+#p_6prev {
+	background: rgba(238, 126, 250, 0.4);
+}
+
+#p_7prev {
+	background: rgba(192, 54, 207, 0.4);
+}
+
+#p_8prev {
+	background: rgba(239, 173, 247, 0.4);
+}

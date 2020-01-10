@@ -1,0 +1,46 @@
+.lobbyLinkRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: black solid;
+	width: 600px;
+}
+
+.lobbylinkId {
+	width: 50px;
+	border-right: black solid;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.lobbyLinkHost{
+	width: 250px;
+	border-right: black solid;
+	margin: 0 auto;
+}
+
+.lobbyLinkStatus{
+	width: 100px;
+	border-right: black solid;
+	margin: 0 auto;
+}
+
+.lobbyLinkNbPlayer {
+	width: 100px;
+	border-right: black solid;
+	margin: 0;
+}
+
+.lobbyLinkJoin {
+	display: flex;
+	width: 55px;
+	align-items: center;
+	justify-content: center;
+}
+
+.lobbyLinkJoin > button {
+	display: block;
+	font-size: 10px;
+	width: 100%;
+	height: 100%;
+}
